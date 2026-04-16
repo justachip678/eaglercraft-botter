@@ -1,12 +1,12 @@
 const WebSocket = require('ws');
 
-const SERVER_WS = 'wss://mc.archyverse.org';
-const BOT_COUNT = 6;                    // Change this later if you want more (start low!)
+const SERVER_WS = 'wss://play.monacoeducation.info/';
+const BOT_COUNT = 10;                    // Change this later if you want more (start low!)
 const BOT_PREFIX = 'Boost';
 const REGISTER_COMMAND = '/register 1234 1234';
 
 function createBot(id) {
-  const username = `${BOT_PREFIX}${id}`;
+  const username = `${totallynotabot}${id}`;
   const ws = new WebSocket(SERVER_WS);
 
   let registered = false;
