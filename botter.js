@@ -6,7 +6,7 @@ const BOT_PREFIX = 'Boost';
 const REGISTER_COMMAND = '/register 1234 1234';
 
 function createBot(id) {
-  const username = `${totallynotabot}${id}`;
+  const username = `${BOT_PREFIX}${id}`;
   const ws = new WebSocket(SERVER_WS);
 
   let registered = false;
@@ -68,7 +68,7 @@ function createBot(id) {
 }
 
 // Start the bots
-console.log(`🚀 Starting ${BOT_COUNT} bots on Archyverse...`);
+console.log(`🚀 Starting ${BOT_COUNT} bots on DylanMC...`);
 for (let i = 1; i <= BOT_COUNT; i++) {
   setTimeout(() => createBot(i), i * 1000);   // 1 second delay between bots
 }
